@@ -1,0 +1,22 @@
+^ : ancre
+/ : indicateurs
+() : groupe de capture
+(?<=r)d : précédé de r , r ne fait pas partie du résultat
+
+
+
+
+preg_match("/(?<=token=)[0-9a-zA-Z]{32}/", $url, $res);
+
+https://moncoachdata.com/blog/tuto-regex/
+
+
+npm install --save react-navigation
+
+await getImage(access_token,0)
+
+
+** navigation => former 2 vues ( Login + Accueil)
+
+** afficher les images au sein de la vue Accueil 
+
