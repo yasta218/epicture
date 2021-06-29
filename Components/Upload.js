@@ -107,7 +107,8 @@ const styles = StyleSheet.create({
 const mapStateToProps = state => {
     return {
         pseudo: state.pseudo,
-        access_token : state.access_token
+        access_token : state.access_token,
+        listFavorite : state.listFavorite
     }
 }
 

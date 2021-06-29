@@ -8,13 +8,14 @@ export default class Search extends React.Component{
     constructor(props){
         super(props)
         this.state = {
-            image :[]
+            image :[],
+
         }
         this.searchedText = "" 
+        
     }
     _searchTextInputChanged(text){
         this.searchedText = text
-        console.log(this.searchedText)
     }
     _searchImage = async (text) =>{
        await this.setState({
@@ -33,8 +34,7 @@ export default class Search extends React.Component{
     
     render(){
         return (
-            <View>
-                
+            <View style={styles.centeredView} >
                 <Button
                     onPress = {() => this._searchImage(this.searchedText)}
                     title="Learn More"/>
@@ -85,6 +85,12 @@ const styles = StyleSheet.create({
         height: 180,
         margin: 5,
         backgroundColor: 'gray',
-    }
+    },
+    centeredView: {
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+        marginTop: 22
+      }
 })
 
